@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css?family=Orbitron&display=swap');
+
+body {
+    background: #eeeeee;
+    text-align: center;
+}
+
+main{
+    display: inline-block;
+}
+
+#frame{
+    margin-top: 50px;
+    padding: 20px;
+    width: 350px;
+    height: 500px;
+    border: solid 4px;
+    border-radius: 10px;
+    background: #999999
+    
+}
+
+#display{
+    margin:20px 0 20px 0;
+    width: 336px;
+    height: 64px;
+    box-shadow: 4px 0 12px black inset;
+    background-color:#00dd00;
+    color:#005500;
+    font-size: 32px;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: normal;
+    text-align: right;
+    border: solid 1px;
+    border-radius: 4px;
+    border-color: #222222;
+}
+#container{
+    width:350px;
+    
+}
+
+#logo{
+    float:left;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#edition{
+    float:right;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+}
+.keys{
+    margin: 40px 0 0 0;
+    border: solid 2px;
+    background: #2f2f2f;
+    padding: 24px;
+    border-radius: 16px;
+}
+.number{
+    background:#bbbbbb;
+    width: 64px;
+    height: 48px;
+    margin: 4px 2px 4px 2px;
+    border-radius: 8px;
+    font-size: 24px;
+}
+
+.notNumber{
+    background:#444444;
+    color: #eeeeee;
+    width: 64px;
+    height: 48px;
+    margin: 4px 2px 4px 2px;
+    border-radius: 8px;
+    font-size: 24px;
+}

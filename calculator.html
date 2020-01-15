@@ -9,9 +9,14 @@
         <link rel="stylesheet" href="calculator.css">
     </head>
     <body>
+        <main>
         <div id="frame">
             <form id="calc">
-                <input type="text" id="display">
+                <input type="text" id="display" disabled>
+                <div id="container">
+                    <label id="logo">hoftun</label>
+                    <label id="edition">hc-002</label>
+                </div>
                 <div class ="keys">
                     <div>
                         <button class="notNumber" id="btnClr">clr</button>
@@ -46,6 +51,7 @@
                 </div>
             </form>
         </div>
+        </main>
         
         <script src="calculator.js" async defer></script>
     </body>
