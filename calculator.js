@@ -9,6 +9,7 @@ function showDisplay(key){
 const buttons = document.querySelectorAll('button');
 buttons.forEach((button) => {
     button.addEventListener('click', (e) => {
+        event.preventDefault()
         let key = document.getElementById(button.id).innerHTML;
         console.log(key);
         showDisplay(key);
