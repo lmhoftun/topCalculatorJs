@@ -1,6 +1,7 @@
 
 function showDisplay(key){
     let disp = document.getElementById('display').value;
+    console.log(key)
     document.getElementById('display').value += key;
 
 }
@@ -10,7 +11,7 @@ buttons.forEach((button) => {
     button.addEventListener('click', (e) => {
         let key = document.getElementById(button.id).innerHTML;
         console.log(key);
-        
+        showDisplay(key);
 
         
         
