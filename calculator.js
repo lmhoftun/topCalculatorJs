@@ -11,6 +11,8 @@ let currentOperand = '';
 
 const number = document.querySelectorAll(".number");
 const operand = document.querySelectorAll(".operand") ;
+const equals = document.getElementById("btnCalculate");
+const clr = document.getElementById("btnClr");
 
 function disp(key){
     let s = document.getElementById("display").value;
@@ -53,7 +55,26 @@ number.forEach((number) => {
     });
 });
 
+equals.addEventListener('click', function() {
+    event.preventDefault();
+    calculate();
+});
 
+function calculate(){
+    let val = document.getElementById("display").value;
+    console.log("total " + val);
+}
+
+clr.addEventListener('click', function(){
+    event.preventDefault();
+    clearAll();
+
+});
+
+function clearAll(){
+    document.getElementById("display").value = "";
+    console.log("clearAll " + document.getElementById("display").value);
+}
 
 
 
