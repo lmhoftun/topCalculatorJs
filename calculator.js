@@ -8,13 +8,19 @@
 //let disp = document.getElementById("display").value;
 let currentOperand = '';
 
-
+let done = false;
 const number = document.querySelectorAll(".number");
 const operand = document.querySelectorAll(".operand") ;
 const equals = document.getElementById("btnCalculate");
 const clr = document.getElementById("btnClr");
 
 function disp(key){
+
+    if (done == true){
+        clearAll();
+        done = false;
+    }
+
     let s = document.getElementById("display").value;
     console.log("Current display " + s + " key " + key);
     //check to see if last key is an operand
@@ -62,7 +68,10 @@ equals.addEventListener('click', function() {
 
 function calculate(){
     let val = document.getElementById("display").value;
-    console.log("total " + val);
+    console.log(eval(val));
+    let x= eval(val);
+    document.getElementById("display").value="eval" + x;
+    done = true;
 }
 
 clr.addEventListener('click', function(){
