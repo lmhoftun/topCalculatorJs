@@ -35,6 +35,22 @@ main{
     border-radius: 4px;
     border-color: #222222;
 }
+
+#evalDisplay{
+    margin:20px 0 20px 0;
+    width: 336px;
+    height: 64px;
+    box-shadow: 4px 0 12px black inset;
+    background-color:#00dd00;
+    color:#005500;
+    font-size: 32px;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: normal;
+    text-align: right;
+    border: solid 1px;
+    border-radius: 4px;
+    border-color: #222222;
+}
 #container{
     width:350px;
     

@@ -69,8 +69,9 @@ equals.addEventListener('click', function() {
 function calculate(){
     let val = document.getElementById("display").value;
     console.log(eval(val));
+    
     let x= eval(val);
-    document.getElementById("display").value="eval" + x;
+    document.getElementById("evalDisplay").value="eval: " + x;
     done = true;
 }
 
