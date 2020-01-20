@@ -69,7 +69,37 @@ main{
     font-size: 24px;
 }
 
-.notNumber{
+.operand{
+    background:#444444;
+    color: #eeeeee;
+    width: 64px;
+    height: 48px;
+    margin: 4px 2px 4px 2px;
+    border-radius: 8px;
+    font-size: 24px;
+}
+
+#btnClr{
+    background:#444444;
+    color: #eeeeee;
+    width: 64px;
+    height: 48px;
+    margin: 4px 2px 4px 2px;
+    border-radius: 8px;
+    font-size: 24px;
+}
+
+#btnComma{
+    background:#444444;
+    color: #eeeeee;
+    width: 64px;
+    height: 48px;
+    margin: 4px 2px 4px 2px;
+    border-radius: 8px;
+    font-size: 24px;
+}
+
+#btnCalculate{
     background:#444444;
     color: #eeeeee;
     width: 64px;
