@@ -16,6 +16,8 @@ const clr = document.getElementById("btnClr");
 
 function disp(key){
 
+    
+
     if (done == true){
         clearAll();
         done = false;
@@ -26,7 +28,7 @@ function disp(key){
     //check to see if last key is an operand
     if(isNaN(key)){
 
-        //if last char in the string is an oprerand, replace it with the new one
+        //if last char in the string is an operand, replace it with the new one
         let r = s.charAt(s.length -1);
         if (isNaN(r)){
             let q = s.slice(0, -1);
@@ -35,11 +37,14 @@ function disp(key){
             
         }else {
             document.getElementById("display").value += key;
+            
         }
         
     }else{
         document.getElementById("display").value += key;
+       
     }
+    
 }
 
 operand.forEach((operand) => {
